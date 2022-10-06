@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "idEquipo": "1",
+      "fechaMantenimiento": "2022-04-21/2022-04-25",
+      "fechaInicio": "2022-04-21",
+      "fechaFinal": "2022-04-25",
+      "estatus": "Finalizado",
+      "observacion": "Se encontró un deposito de agua en el interior del equipo",
+      "tipo": "Mantenimiento Preventivo",
+      "reparado": true
+    },
+    {
+      "id": "2",
+      "idEquipo": "2",
+      "fechaMantenimiento": "2022-06-10/2022-06-11",
+      "fechaInicio": "2022-06-10",
+      "fechaFinal": "2022-06-11",
+      "estatus": "Finalizado",
+      "observacion": "Los pixeles de la pantalla estaban dañados",
+      "tipo": "Mantenimiento Correctivo",
+      "reparado": true
+    }
+  ]
+}
