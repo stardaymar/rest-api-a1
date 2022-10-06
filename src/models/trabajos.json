@@ -8,7 +8,7 @@
       "fechaFinal": "2022-04-25",
       "estatus": "Finalizado",
       "observacion": "Se encontró un deposito de agua en el interior del equipo",
-      "tipo": "Mantenimiento Preventivo",
+      "tipo": "preventivo",
       "reparado": true
     },
     {
@@ -19,7 +19,7 @@
       "fechaFinal": "2022-06-11",
       "estatus": "Finalizado",
       "observacion": "Los pixeles de la pantalla estaban dañados",
-      "tipo": "Mantenimiento Correctivo",
+      "tipo": "correctivo",
       "reparado": true
     }
   ]

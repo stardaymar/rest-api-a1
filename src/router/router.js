@@ -8,11 +8,11 @@ const {
 } = require("../controller/equipos.controller");
 const {
   get: getTrabajos,
- getTrabajosById,
- getTrabajoByTipo,
- deleteTrabajo,
- putTrabajo,
- postTrabajo
+  getTrabajosById,
+  getTrabajoByTipo,
+  deleteTrabajo,
+  putTrabajo,
+  postTrabajo,
 } = require("../controller/trabajos.controller");
 const router = Router();
 
@@ -22,8 +22,7 @@ router.post("/equipos", post);
 router.put("/equipos/:id", put);
 router.delete("/equipos/:id", deleteEquipo);
 
-
-router.get("/trabajos",   getTrabajos);
+router.get("/trabajos", getTrabajos);
 router.get("/trabajos/:id", getTrabajosById);
 router.get("/trabajos/tipo/:tipo", getTrabajoByTipo);
 router.post("/trabajos", postTrabajo);

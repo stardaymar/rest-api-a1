@@ -1,24 +1,24 @@
 {
   "data": [
     {
-        "id":"1",
-        "nombre":"PC Generic",
-        "descripcion":"PC VIT 2010",
-        "serial":"23X097878",
-        "fechaInicioPuestaMarcha":"2022-01-03",
-        "ultimaFechaPuestaMarcha":"2022-04-22",
-        "ultimaFechaMantenimiento":"2022-04-21",
-        "idTrabajo":"1"
+      "id": "1",
+      "nombre": "PC Generic",
+      "descripcion": "PC VIT 2010",
+      "serial": "23X097878",
+      "fechaInicioPuestaMarcha": "2022-01-03",
+      "ultimaFechaPuestaMarcha": "2022-04-22",
+      "ultimaFechaMantenimiento": "2022-04-21",
+      "idTrabajo": "1"
     },
     {
-        "id":"2",
-        "nombre":"SmartTV",
-        "descripcion":"50 pulgadas samsung",
-        "serial":"2221102",
-        "fechaInicioPuestaMarcha":"2022-02-03",
-        "ultimaFechaPuestaMarcha":"2022-06-12",
-        "ultimaFechaMantenimiento":"2022-06-11",
-        "idTrabajo":"2"
+      "id": "2",
+      "nombre": "SmartTV",
+      "descripcion": "50 pulgadas samsung",
+      "serial": "2221102",
+      "fechaInicioPuestaMarcha": "2022-02-03",
+      "ultimaFechaPuestaMarcha": "2022-06-12",
+      "ultimaFechaMantenimiento": "2022-06-11",
+      "idTrabajo": "2"
     }
   ]
 }
