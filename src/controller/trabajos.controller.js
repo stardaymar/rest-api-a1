@@ -85,8 +85,7 @@ class TrabajoController {
       reparado,
     };
     dataTrabajos.push(trabajo);
-    const equipoActualizado = dataEquipos.find((e) => e.id === idEquipo);
-    equipoActualizado.ultimaFechaMantenimiento = new Date().toISOString();
+    equipo.ultimaFechaMantenimiento = new Date().toISOString();
 
     res.status(201).json({
       mensaje: "Trabajo creado correctamente.",
