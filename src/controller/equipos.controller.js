@@ -1,14 +1,14 @@
 const { data: dataEquipos } = require("../models/equipos.json");
 const { data: dataTrabajos } = require("../models/trabajos.json");
 class EquipoController {
-  async get(req, res) {
+   get(req, res) {
     if (dataEquipos.length) {
       res.status(200).json({ equipos: dataEquipos });
     } else {
       res.status(404).json({ mensaje: "No se encontraron equipos." });
     }
   }
-  async getById(req, res) {
+   getById(req, res) {
     const { id } = req.params;
     const equipo = dataEquipos.find((equipo) => equipo.id === id);
     if (!equipo) {
@@ -17,7 +17,7 @@ class EquipoController {
       res.status(200).json({ equipo });
     }
   }
-  async post(req, res) {
+   post(req, res) {
     const {
       nombre,
       descripcion,
@@ -66,7 +66,7 @@ class EquipoController {
     });
   }
 
-  async put(req, res) {
+   put(req, res) {
     const { id } = req.params;
     const equipo = dataEquipos.find((equipo) => equipo.id === id);
     if (!equipo) {
@@ -96,13 +96,8 @@ class EquipoController {
       mensaje: "Equipo actualizado correctamente.",
       equipo,
     });
-
-    res.status(200).json({
-      mensaje: "Se actualizó el equipo correctamente.",
-      equipo,
-    });
   }
-  async delete(req, res) {
+   delete(req, res) {
     const { id } = req.params;
     const equipo = dataEquipos.find((equipo) => equipo.id === id);
     if (!equipo) {
