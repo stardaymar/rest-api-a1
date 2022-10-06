@@ -10,7 +10,6 @@ class EquipoController {
   }
   async getById(req, res) {
     const { id } = req.params;
-    console.log(typeof id, "id");
     const equipo = dataEquipos.find((equipo) => equipo.id === id);
     if (!equipo) {
       res.status(404).json({ mensaje: "No se encontró el equipo." });
@@ -26,7 +25,7 @@ class EquipoController {
       fechaInicioPuestaMarcha,
       ultimaFechaPuestaMarcha,
       ultimaFechaMantenimiento,
-      idTrabajo
+      idTrabajo,
     } = req.body;
     if (
       !nombre ||
@@ -46,12 +45,13 @@ class EquipoController {
     const trabajo = dataTrabajos.find((trabajo) => trabajo.id === idTrabajo);
     if (!trabajo) {
       return res.status(400).json({
-        mensaje: "No se puede crear el equipo, ya que el idTrabajo no pertenece a ningun.",
+        mensaje:
+          "No se puede crear el equipo, ya que el idTrabajo no pertenece a ningun trabajo.",
       });
     }
     const idEquipo = dataEquipos.length + 1;
     const equipo = {
-      id: idEquipo,
+      id: JSON.stringify(idEquipo),
       nombre,
       descripcion,
       serial,
